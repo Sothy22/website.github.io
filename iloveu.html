@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>you</title> 
+    <style> 
+    body { 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 90vh; 
+        } 
+        .container { 
+            background-color: pink; 
+            padding: 1rem; 
+            border-radius: 20px; 
+            width: 250px; 
+        } 
+        .btn { 
+            padding: 0.5rem 2rem ; 
+            border: none; 
+            outline: none; 
+            font-weight: bold; 
+            border-radius: 10px; 
+        } 
+        .btnPrimary { 
+            color: white; 
+            background-color: rgb(78, 15, 136); 
+        } 
+        .btnSecondary { 
+            padding: 0.5rem 1rem; 
+            background-color: rgb(236, 106, 127); 
+        } 
+        .moving:hover { 
+            margin-left: 70px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <section class="container"> 
+        <h2 class="text">Do you love me?💖❤️ </h2> 
+        <button class="btn btnPrimary">Yes</button> 
+        <button class="btn btnSecondary moving">No</button> 
+    </section> 
+    <script> 
+        const btnAgree = document.querySelector(".btnPrimary"); 
+        const btnDisagree = document.querySelector(".btnSecondary"); 
+        const text = document.querySelector(".text"); 
+ 
+        btnAgree.addEventListener("click", ()=>{ 
+            text.innerText = "I Love U too.🤞🥰"; 
+        }) 
+        btnDisagree.addEventListener("mouseover", ()=>{ 
+ 
+        }) 
+    </script> 
+</body> 
+</html>
